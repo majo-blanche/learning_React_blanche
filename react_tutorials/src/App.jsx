@@ -4,13 +4,13 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 const Person = (props) => {
-    return (
+  return (
     <>
-        <h1>name:{props.name}</h1>
-        <h2> last name:{ props.lastname}</h2>
-        <h2>age:{ props.age}</h2>
+      <h1>name:{props.name}</h1>
+      <h2> last name:{props.lastname}</h2>
+      <h2>age:{props.age}</h2>
     </>
-  ) 
+  );
   }
 function App() {
   const [counter, setCounter] = useState(0);
