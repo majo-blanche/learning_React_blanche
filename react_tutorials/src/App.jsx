@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState,useEffect } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
@@ -13,7 +13,12 @@ const Person = (props) => {
   ) 
   }
 function App() {
-  const [counter,setCounter] = useState(0);
+  const [counter, setCounter] = useState(0);
+  
+  useEffect(() => {
+  setCounter(100)
+    
+  },[]);
   return (
     <div className="App">
       <Person name="Majo" lastname="blanche" age="17"/>
