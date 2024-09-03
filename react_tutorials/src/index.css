@@ -66,3 +66,9 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.todo{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
