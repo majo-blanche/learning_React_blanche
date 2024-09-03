@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import TodoForm from "./todoform";
-import Todo from "./todo";
+import Todo from "./setTodo";
 import EditTodoForm from "./edittodoform";
 const TodoWrap = () => {
 	const [todos, setTodos] = useState([]);
@@ -43,12 +43,12 @@ const TodoWrap = () => {
 				todo.isEditing ? (
 					<EditTodoForm editTodo={editTask} task={todo} />
 				) : (
-					<Todo
+						<Todo
 						task={todo}
 						key={index}
 						deleteTodo={deleteTodo}
-						editTodo={editTodo}
-					/>
+							editTodo={editTodo}
+						/>
 				)
 			)}
 		</div>

@@ -6,7 +6,7 @@ import TodoWrap from "./component/todoWrap";
 function App() {
 	return (
 		<div className="App">
-			{/* <Todo/> */}
+		
 			<TodoWrap />
 		</div>
 	);
