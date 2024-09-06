@@ -155,6 +155,7 @@ input {
 	padding: 2rem 0;
 	color: white;
 	width: 400px;
+	border: none;
 }
 .name{
 	font-size: 90px;
