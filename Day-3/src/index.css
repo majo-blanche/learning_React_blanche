@@ -1,0 +1,166 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+.app {
+	background-color: rgb(22, 21, 22);
+	min-height: 100vh;
+}
+
+.head {
+	display: flex;
+	justify-content: space-between;
+	padding: 30px;
+	color: aliceblue;
+}
+a {
+	text-decoration: none;
+
+	margin-right: 10px;
+	color: aliceblue;
+}
+.home {
+	margin-top: 200px;
+	margin-left: 500px;
+	color: aliceblue;
+}
+h1 {
+	font-size: 30px;
+}
+
+.footer {
+	width: fit-content;
+	position: fixed;
+	bottom: 20px;
+	left: 20px;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 20px;
+	gap: 1rem;
+}
+
+.leading-text {
+	display: flex;
+	flex-direction: column;
+	width: fit-content;
+}
+
+.leading-text span:first-child,
+.leading-text span:last-child {
+	font-size: 12px;
+}
+
+.leading-text span:nth-child(3) {
+	display: flex;
+	justify-content: flex-end;
+}
+.boxes {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: rgb(22, 21, 22);
+	margin-top: 60px;
+	gap: 40px;
+}
+.box1 {
+	background-color: rgb(50, 50, 54);
+	margin-top: 80px;
+	height: 300px;
+	width: 200px;
+	margin-bottom: 20px;
+}
+.box2 {
+	background-color: rgb(13, 13, 13);
+	padding-top: 30px;
+	height: 300px;
+	width: 300px;
+	color: aliceblue;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding-left: 150px;
+}
+.box3 {
+	background-color: rgb(36, 35, 38);
+	margin-top: 80px;
+	height: 300px;
+	width: 200px;
+	margin-bottom: 20px;
+}
+.p {
+	font-size: 20px;
+	margin-bottom: 40px;
+}
+.text {
+	color: aliceblue;
+	margin-left: 500px;
+}
+.text2 {
+	margin-left: 80px;
+}
+button {
+	margin-left: 700px;
+	background-color: #232222;
+	color: aliceblue;
+	height: 35px;
+	margin-top: 40px;
+	padding: 10px;
+	outline: none;
+	border: none;
+}
+.left {
+	color: aliceblue;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.container {
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	gap: 4rem;
+	padding: 5rem;
+	margin-top: 40px;
+}
+.right {
+	display: flex;
+	flex-direction: column;
+	color: white;
+
+	width: 30rem;
+}
+form{
+	display: flex;
+	flex-direction: column;
+}
+ .H1 {
+	font-size: 30px;
+	margin-bottom: 10px; 
+}  
+.h1 {
+	margin-bottom: 10px;
+}
+.p2 {
+	margin-bottom: 10px;
+}
+.h2 {
+	margin-bottom: 10px;
+}
+input {
+	background: none;
+	border: none;
+}
+.right input{
+	padding: 2rem 0;
+	color: white;
+	width: 400px;
+}
+.name{
+	font-size: 90px;
+}
+.btn{
+	margin-left: 150px;
+	width: 200px;
+	margin-top: 60px;
+}
