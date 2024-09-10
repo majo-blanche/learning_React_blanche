@@ -1,5 +1,4 @@
 import React from "react";
-import  {Instagram, Twitter } from "../images";
 
 const Home = () => {
 	return (

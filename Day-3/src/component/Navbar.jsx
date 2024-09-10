@@ -6,7 +6,7 @@ const Navbar = () => {
 		<nav className='head'>
       <div>
         <Link to={'/'}>LOGO
-          {/* <img src={Logo}></img> */}
+      
         </Link>
       </div>
       <div className='nav'>

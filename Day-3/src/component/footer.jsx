@@ -1,10 +1,10 @@
 import React from "react";
-import {  Instagram, Twitter } from "../images";
+import Twitter from "../images/bi_twitter.png";
+import Instagram from "../images/bi_instagram.png";
 
 const Footer = () => {
 	return (
 		<div className="footer">
-			 {/* <img src={Facebook} alt="" /> */}
 			<img src={Instagram} alt="" />
 			<img src={Twitter} alt="" />
 		</div>

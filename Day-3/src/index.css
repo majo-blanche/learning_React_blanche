@@ -67,14 +67,14 @@ h1 {
 	background-color: rgb(50, 50, 54);
 	margin-top: 80px;
 	height: 300px;
-	width: 200px;
+	width: 10px;
 	margin-bottom: 20px;
 }
 .box2 {
 	background-color: rgb(13, 13, 13);
 	padding-top: 30px;
 	height: 300px;
-	width: 300px;
+	width: 100px;
 	color: aliceblue;
 	display: flex;
 	flex-direction: column;
@@ -130,14 +130,14 @@ button {
 
 	width: 30rem;
 }
-form{
+form {
 	display: flex;
 	flex-direction: column;
 }
- .H1 {
+.H1 {
 	font-size: 30px;
-	margin-bottom: 10px; 
-}  
+	margin-bottom: 10px;
+}
 .h1 {
 	margin-bottom: 10px;
 }
@@ -151,17 +151,22 @@ input {
 	background: none;
 	border: none;
 }
-.right input{
+.right input {
 	padding: 2rem 0;
 	color: white;
 	width: 400px;
 	border: none;
 }
-.name{
+.name {
 	font-size: 90px;
 }
-.btn{
+.btn {
 	margin-left: 150px;
 	width: 200px;
 	margin-top: 60px;
+}
+.picture {
+	width: 600px;
+}
+.slide-img {
 }

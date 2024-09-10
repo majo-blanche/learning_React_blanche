@@ -44,13 +44,7 @@ const Contact = () => {
 					<button className='btn'>send message</button>
 				</form>
 			</div>
- 	
- 
-
-
-
-    </div>
+ 	</div>
   )
 }
-
 export default Contact

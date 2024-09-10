@@ -1,27 +1,42 @@
-import React from 'react'
+import React from "react";
+import "react-slideshow-image/dist/styles.css";
+import { Fade, Zoom, Slide } from "react-slideshow-image";
+import { imagesItem } from "../images/index";
+
+const divStyle = {
+	display: "flex",
+	alignItems: "center",
+	justifyContent: "center",
+	height: "600px",
+	backgroundSize: "cover",
+};
+const spanStyle = {
+	fontSize: "20px",
+	background: "#efefef",
+	color: "#00000",
+};
 
 const Project = () => {
-  return (
+	return (
 		<>
-			<div className="boxes">
-				<div className="box1"></div>
-				<div className="box2">
-					<p className="p">KEED CAFE</p>
-					<h2>KEED CAFE</h2>
-				</div>
-				<div className="box3"></div>
+			<div className="slide-container">
+				<Slide>
+					{imagesItem.map((image) => (
+						<div key={image.id}>
+							<div
+								style={{
+									...divStyle,
+								}}
+							>
+								<img className="picture" src={image.image} />
+								<span style={{ spanStyle }}></span>
+							</div>
+						</div>
+					))}
+				</Slide>
 			</div>
-			<p className="text">
-				Get the Best design with us as we provide the best sevices and a
-				wide variety of soft
-				<br />{" "}
-				<span className='text2'>
-					wares like adobe photoshop and lightroom as well as express
-				</span>
-      </p>
-      <button>view project</button>
 		</>
-  );
-}
+	);
+};
 
-export default Project
+export default Project;

@@ -44,6 +44,19 @@
 				</form>
 			</div>
 // 	);
+
 // };
 
 // export default Contact;
+{/* <p className="text">
+				Get the Best design with us as we provide the best sevices and a
+				wide variety of soft
+				<br />
+				<span className='text2'>
+					wares like adobe photoshop and lightroom as well as express
+				</span>
+      </p> */}
+	  {
+			/* <p className="p">KEED CAFE</p>
+					<h2>KEED CAFE</h2> */
+		}
