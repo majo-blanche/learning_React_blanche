@@ -1,5 +1,5 @@
 import React from "react";
-
+import "react-slideshow-image/dist/styles.css";
 import { Fade, Zoom, Slide } from "react-slideshow-image";
 import { imagesItem } from "../images/index";
 
@@ -9,6 +9,7 @@ const divStyle = {
 	justifyContent: "center",
 	height: "600px",
 	backgroundSize: "cover",
+	
 };
 const spanStyle = {
 	fontSize: "20px",
@@ -35,6 +36,7 @@ const Project = () => {
 					))}
 				</Slide>
 			</div>
+			
 		</>
 	);
 };
