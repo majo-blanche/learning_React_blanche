@@ -160,13 +160,12 @@ input {
 .name {
 	font-size: 90px;
 }
-.btn {
-	margin-left: 150px;
+.project{
 	width: 200px;
-	margin-top: 60px;
+	height: 600px;
 }
-.picture {
-	width: 600px;
-}
-.slide-img {
-}
+
+
+
+
+

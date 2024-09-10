@@ -9,6 +9,7 @@ const divStyle = {
 	justifyContent: "center",
 	height: "600px",
 	backgroundSize: "cover",
+	
 };
 const spanStyle = {
 	fontSize: "20px",
@@ -35,6 +36,7 @@ const Project = () => {
 					))}
 				</Slide>
 			</div>
+			
 		</>
 	);
 };
