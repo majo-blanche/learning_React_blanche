@@ -160,12 +160,64 @@ input {
 .name {
 	font-size: 90px;
 }
-.project{
+.project {
 	width: 200px;
 	height: 600px;
 }
+.container {
+	overflow: hidden;
+}
+.img1 {
+	width: 400px;
+}
+.slide-container {
+	display: flex;
+	justify-content: center;
+	place-content: center;
+	padding: 20px;
+	overflow: hidden;
+	margin-right: 200px;
+	margin-left: 200px;
+	img {
+		height: 300px;
+		width: 250px;
+	}
+}
+.image1 {
+	height: 300px;
+	min-width: 250px;
 
-  
+	margin: 30px;
+	opacity: 0.6;
+	border-radius: 10px;
+}
+.image2 {
+	height: 350px;
+	min-width: 300px;
+	margin: 30px;
+	border-radius: 10px;
+	img {
+		height: 350px;
+		width: 300px;
+	}
+}
+.image3 {
+	height: 300px;
+	min-width: 250px;
+	margin: 30px;
+	opacity: 0.6;
+	border-radius: 10px;
+}
+.main-btn {
+	display: flex;
+	justify-content: center;
+	button {
+		margin: 20px;
+	}
+}
 
-
-
+button {
+	cursor: pointer;
+	background: black;
+	border-radius: 5px;
+}

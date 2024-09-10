@@ -1,13 +1,15 @@
-import React from 'react'
+import React from "react";
 
 import { Capture } from "../images";
 
-const imageslide = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+const Imageslide = () => {
+	return (
+		<div className="container">
+			<div className="img1"></div>
+			<div className="img2"></div>
+			<div className="img3"></div>
+		</div>
+	);
+};
 
-export default imageslide
+export default Imageslide;
