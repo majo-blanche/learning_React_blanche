@@ -1,12 +1,12 @@
 :root {
 	--background: rgb(243, 244, 247);
-	--text:black;
-	--boxe:white;
+	--text: black;
+	--boxe: white;
 }
 .dark {
 	--background: black;
-	--text:white;
-	--boxe:rgb(31, 30, 30);
+	--text: white;
+	--boxe: rgb(31, 30, 30);
 }
 .App {
 	display: grid;
@@ -92,7 +92,7 @@ span {
 .left {
 	width: 35%;
 	height: 390px;
-	background-color:  var(--background);
+	background-color: var(--background);
 	display: block;
 }
 .right {
@@ -126,30 +126,31 @@ span {
 	height: 100%;
 	background-color: #fff;
 	border-radius: 10px;
-	
 }
-.user-middle{
-	border: 1px solid red;
-	width: 200px;
-	height: 10px;
+.user-middle {
+	width: 230px;
+	height: 130px;
+	margin-bottom: 25px;
+	background-color: #fff;
+	border-radius: 10px;
 }
 
 .Users-container {
-	width: 70%;
+	width: 100%;
 	height: 500px;
-	background-color: #fff;
+
 	margin-top: 40px;
-	border-radius: 20px;
-display: flex;
-	align-content: center;
-	justify-content: center;
-	
+
+	display: flex;
+gap: 40px;
 }
 .big-user {
 	display: flex;
 	justify-content: space-between;
-	margin: 20px;
-	padding: 30px;
+	border-radius: 20px;
+	background-color: #fff;
+	width: 80%;
+	height: 450px;
 }
 button {
 	margin: 30px;
@@ -191,8 +192,7 @@ h2 {
 	align-items: center;
 }
 
-
-#bnt{
+#bnt {
 	width: 80%;
 	background-color: rgb(11, 9, 17);
 	color: #fff;
@@ -206,30 +206,26 @@ h2 {
 	margin: 30px;
 	border-radius: 10px;
 }
-.traffic{
-	margin:20px;
+.traffic {
+	margin: 20px;
 }
-.date{
-	margin-top:none;
+.date {
+	margin-top: none;
 }
-.calendar{
-	width:1000px;
-	
+.calendar {
+	width: 1000px;
 }
-.base{
+.base {
 	border: none;
 	background-color: rgb(11, 9, 17);
 	color: #fff;
-	
 }
-button{
-	margin:20px;
+button {
+	margin: 20px;
 }
-.chart{
+.chart {
 	height: 290px;
 }
-
-
 
 @media (max-width: 900px) {
 	.App {
