@@ -30,6 +30,7 @@ const Job = () => {
 
 	return (
 		<div className="main">
+			<h2>Welcome to my Joblist app</h2>
 			{jobList?.map((item) => (
 				<>
 					<div key={item.id} className="container">
@@ -39,7 +40,9 @@ const Job = () => {
 						</div>
 
 						<div className="bottom">
-							<a href={item.apply_url}><button>Apply</button></a>
+							<a href={item.apply_url}>
+								<button>Apply</button>
+							</a>
 						</div>
 					</div>
 				</>
