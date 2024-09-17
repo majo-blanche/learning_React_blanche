@@ -126,14 +126,24 @@ span {
 	height: 100%;
 	background-color: #fff;
 	border-radius: 10px;
+	
+}
+.user-middle{
+	border: 1px solid red;
+	width: 200px;
+	height: 10px;
 }
 
 .Users-container {
-	width: 100%;
+	width: 70%;
 	height: 500px;
 	background-color: #fff;
 	margin-top: 40px;
 	border-radius: 20px;
+display: flex;
+	align-content: center;
+	justify-content: center;
+	
 }
 .big-user {
 	display: flex;
@@ -180,14 +190,8 @@ h2 {
 	display: flex;
 	align-items: center;
 }
-#Base{
-	width: 80%;
-	background-color: rgb(11, 9, 17);
-	color: #fff;
-	border: none;
-	margin: 20px;
-	gap: 20px;
-}
+
+
 #bnt{
 	width: 80%;
 	background-color: rgb(11, 9, 17);
@@ -212,6 +216,19 @@ h2 {
 	width:1000px;
 	
 }
+.base{
+	border: none;
+	background-color: rgb(11, 9, 17);
+	color: #fff;
+	
+}
+button{
+	margin:20px;
+}
+.chart{
+	height: 290px;
+}
+
 
 
 @media (max-width: 900px) {

@@ -10,6 +10,7 @@ const Colors = () => {
 				  {/* <div className='text-color'>
 					  <p>Brand primary color</p>
 				  </div> */}
+			  
 			
 				<div className="color1"></div>
 				<div className="color1"></div>

@@ -9,6 +9,7 @@ import Typography from "./component/typography";
  import Google from "./component/google";
 import Setcalender from "./component/calender";
 
+
 function App() {
 	return (
 		<div className="App">
@@ -16,6 +17,7 @@ function App() {
 				<div className="sidebar">
 					<Navbar />
 				</div>
+				
 				<div className="container-1">
 					<Header />
 					<div className="menu">

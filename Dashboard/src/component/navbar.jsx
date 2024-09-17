@@ -1,11 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { BellDot } from "lucide-react";
+import { BellDot, Circle } from "lucide-react";
 import { Gauge } from "lucide-react";
 import { Droplet } from "lucide-react";
-import { Pencil,Puzzle  } from "lucide-react";
+import { Pencil,Puzzle,ChevronDown,ChevronUp  } from "lucide-react";
 
 const Navbar = () => {
+	const [Open,setOpen]=useState(false)
 	return (
 		<div className="container">
 			<Link to={"/"} className="dash" style={{ fontSize: "20px" }}>
@@ -26,18 +27,23 @@ const Navbar = () => {
 				</Link>
 				<div className="text">COMPONENT</div>
 			</div>
-			
-			<select name="" id="Base">
-				
-				<option value="">Base</option>
-				<option value="">Accordion</option>
-				<option value="">Breadcrumb</option>
-			</select>
-			<select name="" id="bnt">
-				<option value="">Buttons</option>
-				<option value="">Button</option>
-				<option value="">Buttongroupe</option>
-			</select>
+
+			<button
+				onClick={() => setOpen((prev) => !prev)}
+				className="base"
+			>
+				<Puzzle /><span>Base</span>
+				{!Open ? (<ChevronDown  className="drop-icon"/>) :
+				(<ChevronUp className="drop-icon"/>)}
+			</button>
+			{Open && (
+				<div className="drop-iterm">
+					<Link to={'/Accodion'} className="link"><Circle className="circle" />Accodion</Link>
+						</div>
+)}
+
+
+
 			<Link to={"/google"} className="dash">
 				<span>google</span>
 			</Link>
