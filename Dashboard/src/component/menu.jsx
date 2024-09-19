@@ -1,7 +1,14 @@
 import React from "react";
-import { BarChart, UserRoundPlus } from "lucide-react";
+import {
+	UserRoundPlus,
+	UsersRound,
+	ShoppingCart,
+	EllipsisVertical,
+} from "lucide-react";
 import Chart from "./square";
-// import Right from "./right";
+import Piechart from "./piechart";
+import Blue from "./blue";
+import Myarray from "./User";
 
 const Menu = () => {
 	return (
@@ -10,26 +17,40 @@ const Menu = () => {
 			<div className="big-container">
 				<div className="left">
 					<div className="top">
-						<Chart />
+						<h2 className="u">Sale</h2>
+						<Piechart />
 					</div>
 					<div className="bottom">
-						<div className="bottom-left"></div>
-						<div className="bottom-right"></div>
+						<div className="bottom-left">
+							<div>
+								<p>Customers</p>
+								<h3>44.725</h3>
+							</div>
+							<div className="oders">
+								<UsersRound className="cart" />
+							</div>
+						</div>
+						<div className="bottom-right">
+							<div>
+								<p>Oders</p>
+								<h3>385</h3>
+							</div>
+							<div className="oders">
+								<ShoppingCart className="cart" />
+							</div>
+						</div>
 					</div>
 				</div>
 				<div className="right">
-					<div className="traffic">
-						<h2>Traffic</h2>
-						<p className="date">
-							January 01, 2023 - December 31, 2023
-						</p>
-						<Chart />
-					</div>
+					<h2>TRAFIC</h2>
+					January 01, 2023 - December 31, 2023
+					<Chart />
 				</div>
 			</div>
-			
-				<div className="Users-container">
-					<div className="big-user">
+
+			<div className="Users-container">
+				<div className="big-user">
+					<div className="Aser">
 						<div className="user">
 							<h2>Users</h2>
 							<p>1.232.150 registerad users</p>
@@ -40,13 +61,68 @@ const Menu = () => {
 							Add new users{" "}
 						</button>
 					</div>
-					<div className="side">
-						<div className="user-middle"></div>
-						<div className="user-middle"></div>
-						<div className="user-middle"></div>
+					<div className="all">
+						<div style={{ width: "5px" }}>
+							{" "}
+							<UsersRound />
+						</div>
+						<div style={{ width: "150px" }}>
+							<b>user</b>
+						</div>
+						<div style={{ width: "20px" }}>
+							<b>country</b>
+						</div>
+						<div style={{ width: "170px" }}>
+							<b>usage</b>
+						</div>
+						<div>
+							<b>Activity</b>
+						</div>
 					</div>
+					{Myarray.map((user, index) => (
+						<div key={index} className="All">
+							<div style={{ width: "5px" }} className="pic">
+								<img src={user.pic} />
+							</div>
+
+							<div style={{ width: "200px" }}>
+								<b>{user.username}</b>
+								<div style={{ color: "rgb(100, 100, 100)" }}>
+									{user.type} | {user.registered}
+								</div>
+							</div>
+							<div style={{ width: "20px" }}>
+								<img src={user.country} />
+							</div>
+							<div style={{ width: "150px" }}>{user.usage}</div>
+							<div>
+								<div style={{ color: "rgb(100, 100, 100)", padding:"5px"}}>
+									{user.time}
+								</div>
+								{user.activity}
+							</div>
+						</div>
+					))}
 				</div>
-			
+				<div className="side">
+					<div className="user-top">
+						<div className="blue">
+							<div>
+								<h3>26K</h3>
+								<p>Users</p>
+							</div>
+							<div>
+								<EllipsisVertical className="dot" />
+							</div>
+						</div>
+
+						<Blue />
+					</div>
+					<div className="user-middle"></div>
+					<div className="user-bottom"></div>
+				</div>
+			</div>
+			<div className="bottom-user"></div>
 		</div>
 	);
 };

@@ -48,6 +48,7 @@ const Header = () => {
 				<div className="sun" onClick={change}>
 					{themes ? <Moon /> : <Sun />}
 				</div>
+				
 				<div className="icon">
 					<LayoutGrid />
 				</div>

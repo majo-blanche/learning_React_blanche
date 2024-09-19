@@ -1,6 +1,4 @@
-
 import React from "react";
-import { Line, Bar } from "react-chartjs-2";
 import {
 	Chart as ChartJS,
 	CategoryScale,
@@ -10,8 +8,9 @@ import {
 	Title,
 	Tooltip,
 	Legend,
-	registerables
+	registerables,
 } from "chart.js";
+import { Mycharts } from "./graphdata";
 
 ChartJS.register(
 	CategoryScale,
@@ -25,7 +24,6 @@ ChartJS.register(
 );
 
 const Chart = () => {
-	
 	const data = {
 		labels: [
 			"Jan",
@@ -49,7 +47,7 @@ const Chart = () => {
 				borderColor: "skyblue",
 				backgroundColor: "skyblue",
 				tension: 0.1,
-			},       
+			},
 			{
 				label: "TRAFIC",
 				data: [65, 59, 80, 81, 56, 55, 45, 76, 98, 12, 23, 43],
@@ -74,11 +72,19 @@ const Chart = () => {
 	};
 
 	return (
-		<div className="chart">
-			<Bar data={data} options={options}  />;
-			
+		<div className="">
+			<div className="">
+				{Mycharts.map((Graphs, index) => (
+					<div key={index} className="">
+						<Graphs.name data={data} options={options} />;
+					</div>
+				))}
+			</div>
 		</div>
 	);
 };
 
 export default Chart;
+
+
+

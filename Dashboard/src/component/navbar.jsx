@@ -28,27 +28,32 @@ const Navbar = () => {
 				<div className="text">COMPONENT</div>
 			</div>
 
-			<button
-				onClick={() => setOpen((prev) => !prev)}
-				className="base"
-			>
-				<Puzzle /><span>Base</span>
-				{!Open ? (<ChevronDown  className="drop-icon"/>) :
-				(<ChevronUp className="drop-icon"/>)}
+			<button onClick={() => setOpen((prev) => !prev)} className="base">
+				<Puzzle />
+				<span>Base</span>
+				{!Open ? (
+					<ChevronDown className="drop-icon" />
+				) : (
+					<ChevronUp className="drop-icon" />
+				)}
 			</button>
 			{Open && (
 				<div className="drop-iterm">
-					<Link to={'/Accodion'} className="link"><Circle className="circle" />Accodion</Link>
-						</div>
-)}
-
-
+					<Link to={"/Accodion"} className="link">
+						<Circle className="circle" />
+						Accodion
+					</Link>
+				</div>
+			)}
 
 			<Link to={"/google"} className="dash">
 				<span>google</span>
 			</Link>
 			<Link to={"/calender"} className="dash">
 				<span>calendar</span>
+			</Link>
+			<Link to={"/graphs"} className="dash">
+				<span>Charts</span>
 			</Link>
 		</div>
 	);

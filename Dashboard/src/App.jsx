@@ -8,6 +8,7 @@ import Colors from "./component/Colors";
 import Typography from "./component/typography";
  import Google from "./component/google";
 import Setcalender from "./component/calender";
+import Graphs from "./component/graphs";
 
 
 function App() {
@@ -17,7 +18,7 @@ function App() {
 				<div className="sidebar">
 					<Navbar />
 				</div>
-				
+
 				<div className="container-1">
 					<Header />
 					<div className="menu">
@@ -29,7 +30,11 @@ function App() {
 								path="/Typography"
 							></Route>
 							<Route element={<Google />} path="/Google"></Route>
-							<Route element={<Setcalender />} path="/calender"></Route>
+							<Route
+								element={<Setcalender />}
+								path="/calender"
+							></Route>
+							<Route element={<Graphs />} path="/Graphs"></Route>
 						</Routes>
 					</div>
 				</div>

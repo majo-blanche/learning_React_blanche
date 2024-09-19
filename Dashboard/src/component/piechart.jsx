@@ -1,6 +1,5 @@
-
-import React from "react";
-import { Line, Bar } from "react-chartjs-2";
+import React from 'react'
+import { Line, Bar} from "react-chartjs-2";
 import {
 	Chart as ChartJS,
 	CategoryScale,
@@ -10,7 +9,7 @@ import {
 	Title,
 	Tooltip,
 	Legend,
-	registerables
+	registerables,
 } from "chart.js";
 
 ChartJS.register(
@@ -24,39 +23,34 @@ ChartJS.register(
 	...registerables
 );
 
-const Chart = () => {
-	
+const Piechart = () => {
 	const data = {
 		labels: [
-			"Jan",
-			"Feb",
-			"Mar",
+			"January",
+			"February",
+			"March",
 			"April",
 			"May",
-			"June",
-			"Jul",
-			"Aug",
-			"Sep",
-			"oct",
-			"Nov",
-			"Dec",
+			
+			
 		],
 		datasets: [
 			{
-				label: "TRAFIC",
+				label: "Sale",
 				data: [65, 59, 80, 81, 56, 55, 45, 76, 98, 12, 23, 43],
-				fill: false,
+				fill: true,
 				borderColor: "skyblue",
 				backgroundColor: "skyblue",
 				tension: 0.1,
-			},       
+			},
 			{
-				label: "TRAFIC",
-				data: [65, 59, 80, 81, 56, 55, 45, 76, 98, 12, 23, 43],
-				fill: false,
-				borderColor: "skyblue",
+				label: "Sale",
+				data: [90, 100, 80, 81, 56, ],
+				fill: true,
+				borderColor: "blue",
 				backgroundColor: "blue",
-				tension: 0.1,
+        tension: 0.1,
+        borderRadius:"10px"
 			},
 		],
 	};
@@ -68,17 +62,18 @@ const Chart = () => {
 			},
 			title: {
 				display: true,
-				text: "TRAFIC",
+				text: "Sales Over Time",
 			},
 		},
 	};
 
 	return (
-		<div className="chart">
-			<Bar data={data} options={options}  />;
-			
-		</div>
+		
+			<Line className='pie' data={data} options={options} />
+		
 	);
 };
 
-export default Chart;
+
+
+export default Piechart
