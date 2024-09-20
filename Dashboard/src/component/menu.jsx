@@ -10,6 +10,28 @@ import Piechart from "./piechart";
 import Blue from "./blue";
 import Myarray from "./User";
 
+const array = [
+	{
+		client: "New client",
+		border: "4px solid rgb(116, 122, 242)",
+		number: "9,123",
+	},
+	{
+		client: "New client",
+		border: "4px solid rgb(239, 55, 110)",
+		number: "9,123",
+	},
+	{
+		client: "New client",
+		border: " 4px solid rgb(51, 153, 255)",
+		number: "9,123",
+	},
+	{
+		client: "New client",
+		border: " 4px solid rgb(81, 204, 138)",
+		number: "9,123",
+	},
+];
 const Menu = () => {
 	return (
 		<div className="main-menu">
@@ -96,7 +118,12 @@ const Menu = () => {
 							</div>
 							<div style={{ width: "150px" }}>{user.usage}</div>
 							<div>
-								<div style={{ color: "rgb(100, 100, 100)", padding:"5px"}}>
+								<div
+									style={{
+										color: "rgb(100, 100, 100)",
+										padding: "5px",
+									}}
+								>
 									{user.time}
 								</div>
 								{user.activity}
@@ -122,7 +149,26 @@ const Menu = () => {
 					<div className="user-bottom"></div>
 				</div>
 			</div>
-			<div className="bottom-user"></div>
+			<div className="bottom-user">
+				<div className="week">
+					<h1>Traffic</h1>
+					<p>Last Week</p>
+				</div>
+				<div className="Traffic-container">
+					{array.map((Traffic, index) => (
+						<div
+							key={index}
+							className="Traffic"
+							style={{ borderLeft: Traffic.border }}
+						>
+							<span>{Traffic.client}</span>
+							<span>
+								<strong>{Traffic.number}</strong>
+							</span>
+						</div>
+					))}
+				</div>
+			</div>
 		</div>
 	);
 };

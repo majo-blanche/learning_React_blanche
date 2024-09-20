@@ -72,11 +72,12 @@ const Chart = () => {
 	};
 
 	return (
-		<div className="">
-			<div className="">
+		<div className="grap">
+			
+			<div className="graph">
 				{Mycharts.map((Graphs, index) => (
-					<div key={index} className="">
-						<Graphs.name data={data} options={options} />;
+					<div key={index} className="graphs">
+						<Graphs.name data={data} options={options} />
 					</div>
 				))}
 			</div>

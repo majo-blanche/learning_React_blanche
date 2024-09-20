@@ -5,14 +5,6 @@ import 'react-big-calendar/lib/css/react-big-calendar.css'
 const localizer = momentLocalizer(moment);
 const Setcalender = () => {
     const [events, setEvents] = useState([]);
-    //     const saveEvents = localStorage.getItem('events');
-    //     return saveEvents ?
-    //         JSON.parse(saveEvents) : [];
-    // });
-
-    // useEffect(() => {
-    //     localStorage.setItem('events',JSON.stringify(events));
-    // },[events])
     const handleSelectSlot = ({ start, end }) => {
         const title = window.prompt('New Event Name')
         if (title) {

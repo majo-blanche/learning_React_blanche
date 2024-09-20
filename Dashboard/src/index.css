@@ -104,7 +104,6 @@ span {
 	border-radius: 20px;
 	padding: 5px;
 	margin-top: 20px;
-
 }
 .bottom {
 	display: flex;
@@ -122,7 +121,7 @@ span {
 	border-radius: 15px;
 	padding-bottom: 10px;
 }
-.u{
+.u {
 	padding: 10px;
 }
 .bottom-left {
@@ -145,9 +144,9 @@ span {
 }
 .user-top {
 	width: 280px;
-	height:150px;
+	height: 150px;
 	margin-bottom: 25px;
-	background-color:rgb(51, 153, 255);
+	background-color: rgb(51, 153, 255);
 	border-radius: 10px;
 	display: block;
 	padding: 10px;
@@ -156,11 +155,11 @@ span {
 	width: 280px;
 	height: 150px;
 	margin-bottom: 25px;
-	background-color:rgb(255, 204, 0);
+	background-color: rgb(255, 204, 0);
 	border-radius: 10px;
 	padding: 10px;
 }
-.blue-cnt{
+.blue-cnt {
 	height: 100%;
 	width: 100%;
 }
@@ -168,7 +167,7 @@ span {
 	width: 280px;
 	height: 150px;
 	margin-bottom: 25px;
-	background-color:rgb(239, 55, 110);
+	background-color: rgb(239, 55, 110);
 	border-radius: 10px;
 	padding: 10px;
 }
@@ -176,13 +175,13 @@ span {
 .Users-container {
 	width: 100%;
 	height: 500px;
-margin-bottom: 50px;
+	margin-bottom: 50px;
 	margin-top: 4px;
 
 	display: flex;
-gap: 40px;
+	gap: 40px;
 }
-.Right{
+.Right {
 	width: 100px;
 }
 .big-user {
@@ -193,12 +192,13 @@ gap: 40px;
 	height: 540px;
 	margin-bottom: 40px;
 }
-.bottom-user{
+.bottom-user {
 	width: 100%;
 	height: 600px;
 	background-color: #fff;
 	border-radius: 20px;
 	margin-top: 100px;
+	padding: 10px;
 }
 button {
 	margin: 30px;
@@ -234,9 +234,9 @@ h2 {
 	background-color: #fff;
 	display: flex;
 	flex-wrap: wrap;
-padding: 10px;
+	padding: 10px;
 }
-.color2{
+.color2 {
 	display: block;
 }
 .head {
@@ -255,12 +255,12 @@ padding: 10px;
 	width: 150px;
 	height: 130px;
 	border-radius: 10px;
-	display: flex;	
+	display: flex;
 	margin: 30px;
 }
-.text-color{
+.text-color {
 	padding: 10px;
-	display: block;	
+	display: block;
 }
 .traffic {
 	height: 250px;
@@ -281,59 +281,104 @@ button {
 	margin: 20px;
 }
 .chart {
-	height:85%;
+	height: 85%;
 	width: 100%;
 }
-.pie{
-width: 100%;
-height: 100%;
+.pie {
+	width: 100%;
+	height: 100%;
 }
-.cart{
+.cart {
 	background-color: lightblue;
 	color: rgb(51, 153, 255);
 	margin-top: 12px;
 	width: 30px;
 	height: 30px;
 	padding: 10px;
-border-radius: 5px;	
+	border-radius: 5px;
 }
-.dot{
+.dot {
 	margin-top: 12px;
 }
-.blue{
+.blue {
 	display: flex;
 	justify-content: space-between;
 }
-.all{
+.all {
 	display: flex;
 	justify-content: space-between;
 	border-bottom: 1px solid rgb(204, 204, 204);
 }
-.Aser{
+.Aser {
 	display: flex;
 	justify-content: space-between;
 }
-.All{
+.All {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	border-bottom: 1px solid  rgb(204, 204, 204);
+	border-bottom: 1px solid rgb(204, 204, 204);
 	padding: 10px;
 }
-.pic img{
+.pic img {
 	border-radius: 100%;
 	width: 40px;
 	height: 40px;
 }
-.chart-container{
+.chart-container {
 	width: 100%;
 	display: flex;
 	align-content: space-between;
 }
-.top-chart{
+.top-chart {
 	width: 50%;
 	background-color: #fff;
 }
+.graphs {
+	background-color: #fff;
+	width: 500px;
+	border-radius: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.graph {
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+	display: flex;
+	gap: 2rem;
+	flex-wrap: wrap;
+	align-items: center;
+	margin: 0 auto;
+	justify-content: space-evenly;
+	padding: 10px;
+}
+.grap {
+	width: 100%;
+}
+.week{
+	border-bottom: 1px solid  rgb(204, 204, 204);
+}
+.Traffic-container{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid  rgb(204, 204, 204);
+	padding: 10px;
+}
+.Traffic{
+	display: flex;
+	flex-direction: column;
+	gap: 0.8rem;
+	padding: 10px;
+}
+
+
+.Traffic span {
+	margin: 0;
+}
+
 @media (max-width: 900px) {
 	.App {
 		display: block;
