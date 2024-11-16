@@ -20,13 +20,17 @@ a {
 	margin-right: 10px;
 	color: aliceblue;
 }
+.left{
+	width: 30%;
+}
+
 .home {
 	margin-top: 200px;
 	margin-left: 500px;
 	color: aliceblue;
 }
 h1 {
-	font-size: 30px;
+	font-size: 40px;
 }
 
 .footer {
@@ -48,7 +52,7 @@ h1 {
 
 .leading-text span:first-child,
 .leading-text span:last-child {
-	font-size: 12px;
+	font-size: 20px;
 }
 
 .leading-text span:nth-child(3) {
@@ -127,8 +131,7 @@ button {
 	display: flex;
 	flex-direction: column;
 	color: white;
-
-	width: 30rem;
+width: 30%;
 }
 form {
 	display: flex;
@@ -188,7 +191,7 @@ input {
 	min-width: 250px;
 
 	margin: 30px;
-	opacity: 0.6;
+	opacity: 0.2;
 	border-radius: 10px;
 }
 .image2 {
@@ -205,19 +208,67 @@ input {
 	height: 300px;
 	min-width: 250px;
 	margin: 30px;
-	opacity: 0.6;
+	opacity: 0.2;
 	border-radius: 10px;
 }
 .main-btn {
 	display: flex;
 	justify-content: center;
 	button {
-		margin: 20px;
+		margin: 60px;
 	}
 }
-
-button {
+.bntgit{
+	align-self:end;
+	margin-right: 150px;
 	cursor: pointer;
 	background: black;
 	border-radius: 5px;
+	height: 40px;
+	width: 150px;
+
 }
+.about-container{
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	margin-left: 30px;
+	color: white;
+}
+.logo{
+	background-color: #77a5d0;
+	color: black;
+	width: 50px;
+	height: 25px;
+	border-radius: 50%;
+	padding: 5px;
+	text-align: center;
+}
+.discription{
+	margin: 0px 0px  0px  150px;
+	width: 600px;
+}
+.pic{
+	width: 350px;
+	border-radius: 10px;
+	margin-bottom: 10px;
+}
+.discription h1{
+	margin-bottom: 60px;
+	text-align: center;
+	background-color: #77a5d0;
+	color: #232222;
+	border-radius: 50%;
+	width: 200px;
+	height: 40px;
+}
+.discription h2{
+	margin-bottom: 40px;
+	color: #77a5d0;
+	
+} 
+.discription p{
+padding-bottom:  10px;
+}
+
+

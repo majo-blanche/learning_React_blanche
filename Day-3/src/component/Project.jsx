@@ -36,29 +36,10 @@ const Slideshow = () => {
 	};
 
 	return (
+		
 		<div className="main-ctn">
 			<div className="slide-container">
-				{/* <Slide>
-				{imagesItem.map((slideImage, index) => (
-					<div key={index}>
-						<div
-							style={{
-								...divStyle,
-								//backgroundImage: `url(${slideImage.image})`,
-							}}
-						>
-							<img
-								src={slideImage.image}
-								alt=""
-								style={{
-									objectFit: "contain",
-								}}
-							/>
-						</div>
-					</div>
-				))}
-			</Slide> */}
-
+				
 				<>
 					<div className="image1">
 						<img
